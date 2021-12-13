@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="div1">
+            <p id="p1">birinci paragraf.</p>
+            <p id="p2">ikinci paragraf.</p>
+        </div>
+        
+        <script>
+            var para = document.createElement("p");
+            //yeni bir p etiketi oluştur
+            var node = document.createTextNode("Yeni paragraf.");
+            //yeni bir içerik metni oluştur
+            para.appendChild(node);
+            //p etiketi içine metni koy
+            var element = document.getElementById("div1");
+            //div1 id li div elemanını seç
+            element.appendChild(para);
+            //yeni p etiketini div içerisine ekle
+        </script>
+    </body>
+</html>

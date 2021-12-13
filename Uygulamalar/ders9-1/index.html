@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>ders9-stirng ve date nesneleri</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            var metin="     Merhaba Dünya ";
+            var metin2="sona boşuk    ";
+            console.log("metin değişkeni karakter sayısı : "+metin.length);
+            var birlestir=metin.concat(metin2);
+            //iki metni birleştir
+            console.log("concat() metodu : "+birlestir);
+            birlestir=birlestir.trim();
+            //boşlukları temizle
+            console.log("trim() metodu : "+birlestir);
+            console.log("toLowerCase() metodu : "+birlestir.toLowerCase());
+            //küçük harfe çevir
+            console.log("toUpperCase() metodu : "+birlestir.toUpperCase());
+            //büyük harfe çevir
+
+            var date=new Date();
+            //date nesnesi oluşturuldu
+            console.log("tam tarih saat bilgisi: "+date);
+            console.log("ayın günü bilgisi: "+date.getDate());
+            console.log("haftanın günü bilgisi: "+date.getDay());
+            console.log("ay bilgisi: "+date.getMonth());
+            console.log("yıl bilgisi: "+date.getFullYear());
+            console.log("saat bilgisi: "+date.getHours());
+            console.log("dakika bilgisi: "+date.getMinutes());
+            console.log("saniye bilgisi: "+date.getSeconds());
+
+            var gunler=["pazar","pazartesi","salı","çarşamba","perşembe","cuma","cumartesi"];
+            console.log("metin gün bilgisi: "+gunler[date.getDay()]);
+
+            var aylar=["ocak","şubat","mart","nisan","mayıs","haziran","temmuz","ağustos","eylül","ekim","kasım","aralık"];
+            console.log("metin ay bilgisi: "+aylar[date.getMonth()]);
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>

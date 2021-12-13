@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <button onclick="basla()">Başla</button>
+        <button onclick="clearTimeout(tekbir)">Durdur</button>
+        <!--zamanlayıcıyı sıfırlar-->
+        <br><br><br>
+        <input id="sayac" type="text" name="sayac" value="">
+        <button onclick="say()">Geri Say</button>
+        <button onclick="dur()">Duraklat</button>
+        <script>
+            function basla(){
+                tekbir=setTimeout(tektimer, 3000);
+                function tektimer(){
+                    alert('Merhaba');
+                }
+            }
+            
+            
+            function say() {
+                myVar = setInterval(myTimer, 1000);
+                function myTimer(){
+                    if (document.getElementById("sayac").value>0) {
+                        document.getElementById("sayac").value-=1;
+                        //input içerisinde ki değeri bir azalt
+                    } else {
+                        //eğer input içeriği 0 olursa
+                        dur();
+                        alert("Süre Bitti!!!");
+                    }
+                   
+                }
+            }
+            function dur() {
+                clearInterval(myVar);
+                //zamanlayıcıyı durdur
+            }
+        </script>
+    </body>
+</html>

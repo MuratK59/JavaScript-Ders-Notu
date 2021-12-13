@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1 id="test">test</h1>
+        <button onclick="yazdir()">Yazdır</button>
+        <script>
+            alert("sayfamıza hoşgeldiniz");
+            var isim=prompt("isminiz nedir?");
+            var eleman=document.getElementById("test")
+            eleman.innerHTML=isim;
+            eleman.style.fontSize = "50px";
+            function yazdir() {
+                var secim=confirm("sayfa yazdırılsın mı?");
+                if (secim) {
+                    window.print();
+                }
+            }
+        </script>
+    </body>
+</html>

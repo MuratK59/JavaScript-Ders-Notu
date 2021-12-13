@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h2>JavaScript addEventListener()</h2>
+
+        <p>bu örnek bir butona tıklama event listener ekler.</p>
+        
+        <button id="myBtn">Tıkla</button>
+        
+        <p id="demo"></p>
+        
+        <script>
+        document.getElementById("myBtn").addEventListener("click", displayDate);
+        /*myBtn id li elemanın fare ile tıklanmasına bir olay 
+        dinleyicisi atadık ve eğer bu olay gerçekleşirse 
+        displayDate fonksiyonu çalıştırılır*/
+                
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+        </script>
+    </body>
+</html>

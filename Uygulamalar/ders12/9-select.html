@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>select</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <form>
+            Metin:<input type="text" name="metin" value=""><br>
+            Değer:<input type="text" name="deger" value="">
+            <input type="button" name="ekle" value="Ekle"><br><br>
+            <select id="renkler" size="10">
+                <option value="red">Kırmızı</option>
+                <option value="blue">Mavi</option>
+                <option value="purple">Mor</option>
+                <option value="green">Yeşil</option>
+            </select><br>
+            Seçilen İndeks:<i id="secilenIndex"></i><br>
+            <input type="button" onclick="silin()" name="sil" value="Seçileni Sil">
+        </form>
+        <script>
+            var select=document.getElementById("renkler");
+            select.addEventListener("click",goster);
+            function goster() {
+                document.getElementById("secilenIndex").innerText="İndeks: "+ select.selectedIndex +" Değer:"+select[select.selectedIndex].value;
+            }
+
+            document.querySelector("input[name='ekle']").addEventListener("click",ekleme);
+            function ekleme() {
+                var opti=document.createElement("option");
+                opti.text=document.querySelector("input[name='metin']").value;
+                opti.value=document.querySelector("input[name='deger']").value;
+                select.add(opti,null);//sona ekler//select.add(opti,ref);//ref bir id değeri
+            }
+
+            function silin() {
+                select.remove(select.selectedIndex);
+            }
+        </script>
+    </body>
+</html>

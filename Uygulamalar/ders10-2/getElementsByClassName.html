@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>getElementByClassName</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h2>HTML Elemanlarını class ile bulma</h2>
+
+        <p>Merhaba Dünya!</p>
+
+        <p class="intro">DOM çok faydalıdır.</p>
+        <p class="intro">Bu örnek <b>getElementsByClassName</b> metodunu gösterir.</p>
+
+        <p id="demo"></p>
+
+        <script>
+            var x = document.getElementsByClassName("intro");
+            document.getElementById("demo").innerHTML = 'class="intro" olan paragraflardan ilkinin içeriği :' + x[0].innerHTML;
+        </script>
+    </body>
+</html>

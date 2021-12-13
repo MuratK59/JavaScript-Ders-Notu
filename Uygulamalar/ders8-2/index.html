@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ders8-2 fonksiyon özellikleri</title>
+</head>
+<body>
+    <script>
+        var deger="<global >değişkenler.?";
+        var esc=escape(deger);
+        //özel karakterler farklı bir karakter kodlama yapılır.
+        console.log("escape() sonucu : "+esc);
+        var unesc=unescape(esc);
+        //özel kodlanan karakterler normal hale geri döndürülür
+        console.log("unescape() sonucu : "+unesc);
+
+        var degisken="ali";//metin sayıya dönüştürülemez
+        var sayi=parseInt(degisken);
+        //integere dönüştürülemez NaN döner
+        console.log("parseInt() sonucu: "+sayi);
+
+        degisken="15";
+        sayi=parseInt(degisken);
+        //integere dönüştürülür
+        console.log("parseInt() sonucu: "+sayi);
+
+        degisken="3.14";
+        sayi=parseFloat(degisken);
+        console.log("parseFloat() sonucu: "+sayi);
+
+        degisken="1";
+        sayi=parseFloat(degisken);
+        console.log("parseFloat() sonucu: "+sayi);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>checkbox</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        Okudum Onaylıyorum <input type="checkbox" name="check">
+        <p id="hata"></p>
+        <script type="text/JavaScript">
+           var kontrol=document.querySelector("input[type='checkbox']");
+           kontrol.addEventListener("click",goster);
+
+           function goster() {
+                if (kontrol.checked) {
+                    document.getElementById("hata").innerHTML="Teşekkürler";
+                }else{
+                    document.getElementById("hata").innerHTML="";
+                }
+           }
+        </script>
+    </body>
+</html>

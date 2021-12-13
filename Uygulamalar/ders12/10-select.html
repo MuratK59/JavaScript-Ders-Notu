@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>select</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <form>
+            <input type="button" onclick="secin()" name="secAll" value="Hepsini Seç"><br><br>
+            <select id="renkler" size="8" multiple="multiple">
+                <option value="red">Kırmızı</option>
+                <option value="blue">Mavi</option>
+                <option value="purple">Mor</option>
+                <option value="green">Yeşil</option>
+                <option value="white">Beyaz</option>
+            </select><br>
+            <input type="button" name="goster" value="Seçilenleri Göster">
+        </form>
+        <script>
+            var select=document.getElementById("renkler");
+            function secin() {
+                for (let i = 0; i < select.length; i++) {
+                    select[i].selected="selected";
+                }
+            }
+            
+            document.querySelector("input[name='goster']").addEventListener("click",goster);
+            function goster() {
+                var metin="";
+                for (let i = 0; i < select.length; i++) {
+                    if (select[i].selected==true) {
+                        metin+=select[i].textContent +"-"+ select[i].value +"\n";
+                    }
+                }
+                alert(metin);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>checkbox</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>İlgi Alanları</h1> 
+        <input class="sec" type="checkbox" name="sec" value="Teknoloji">Teknoloji<br>
+        <input class="sec" type="checkbox" name="sec" value="Bilim">Bilim<br>
+        <input class="sec" type="checkbox" name="sec" value="Spor">Spor<br>
+        <input class="sec" type="checkbox" name="sec" value="Doğa">Doğa<br>
+        <input class="sec" type="checkbox" name="sec" value="Psikoloji">Psikoloji<br>
+        <input id="test" onclick="test()" type="button" value="Test"><br>
+        <p id="secilen"></p>
+        <script type="text/JavaScript">
+            var kontrol=document.getElementsByName("sec");
+            var metin="Seçilenler : ";
+            function test() {
+                for (var i =0; i < kontrol.length; i++) {
+                    if (kontrol[i].checked) {
+                        metin+=kontrol[i].value+"("+i+") ";
+                    }
+                }
+                document.getElementById("secilen").innerHTML=metin;
+            }
+        </script>
+    </body>
+</html>

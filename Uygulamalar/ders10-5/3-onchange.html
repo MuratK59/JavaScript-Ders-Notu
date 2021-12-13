@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function myFunction() {
+                var x = document.getElementById("fname");
+                x.value = x.value.toUpperCase();
+            }
+        </script>
+    </head>
+    <body>
+            Adınızı Giriniz: <input type="text" id="fname" onchange="myFunction()">
+            <!--eğer metin içeriği değiştirilirse olay tetiklenir-->
+            <p>Metin girildikten sonra sayfada boş bir yerde fare sol tuşu ile tıklayınız.</p>
+
+    </body>
+</html>

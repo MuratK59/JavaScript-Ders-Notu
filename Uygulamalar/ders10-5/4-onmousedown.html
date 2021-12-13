@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+        style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+        Tıkla</div>
+        <!--fare ile div in üstünde farenin sol tuşunu basılı tutunuz-->
+        <script>
+            function mDown(obj) {
+                obj.style.backgroundColor = "#1ec5e5";
+                obj.innerHTML = "Beni Bırak";
+            }
+            
+            function mUp(obj) {
+                obj.style.backgroundColor="grey";
+                obj.innerHTML="Teşekkürler";
+            }
+        </script>
+    </body>
+</html>

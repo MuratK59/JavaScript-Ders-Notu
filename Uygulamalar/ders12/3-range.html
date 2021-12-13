@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>range</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        Range: <input type="range" name="range" value="50" min="0" max="100" step="5">
+        <br>
+        Değer: <input type="text" name="text" value="">
+
+        <script type="text/JavaScript">
+            document.querySelector("input[type='range']").addEventListener("change",yaz);
+            function yaz() {
+                var deger=document.querySelector("input[type='range']").value;
+                document.querySelector("input[type='text']").value=deger;
+            }
+        </script>
+    </body>
+</html>

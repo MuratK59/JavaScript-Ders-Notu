@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            alert("sayfanın adresi:"+window.location.href);
+            function ac() {
+                var str="location=no,menubar=no,toolbar=no,status=no,width=250,height=150";
+                window.open("screen.html","_blank",str);
+                //yazılan parametrelere göre yeni bir pencere açar
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="ac()">Yeni Pencere Aç</button>
+    </body>
+</html>

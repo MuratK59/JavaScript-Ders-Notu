@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>progress</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        Progress: <progress max="100"></progress>
+        <br>
+        Değer: <input type="number" min="0" max="100" step="5">
+
+        <script type="text/JavaScript">
+            document.querySelector("input[type='number']").addEventListener("click",yaz);
+            function yaz() {
+                var deger=document.querySelector("input[type='number']").value;
+                document.querySelector("progress").value=deger;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <p id="genislik"></p>
+        <p id="yukseklik"></p>
+        <p id="icerikX"></p>
+        <p id="icerikY"></p>
+
+        <script>
+            document.getElementById("genislik").innerText ="ekran genişliği: "+screen.width;
+            document.getElementById("yukseklik").innerText ="ekran yüksekliği: "+screen.height;    
+
+            document.getElementById("icerikX").innerText ="pencere genişliği: "+window.innerWidth;
+            document.getElementById("icerikY").innerText ="pencere yüksekliği: "+window.innerHeight;
+        </script>
+    </body>
+</html>

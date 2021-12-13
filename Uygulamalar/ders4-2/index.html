@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ders4-2 yerel değişkenler</title>
+    <script>
+        function fun(){
+            var i=10;
+            j=20;
+            //i değişkeni yerel, j değişkeni geneldir.
+        }
+        //bu satırda i ve j değişkenleri erişilemez.
+        fun();
+        //j değişkeni erişilebilir duruma geldi.
+    </script>
+</head>
+<body>
+    <script>
+        //j değişkeni burada kullanılabilir durumda.
+        function fun2(){
+            document.write("j değişkeninin içeriği:"+j);
+        }
+        fun2();
+    </script>
+</body>
+</html>

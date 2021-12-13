@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>des7-1 dizi tanımlamak</title>
+</head>
+<body>
+    <script>
+        var dizi1=new Array();//uzunluğu belirtilmemiş dizi
+        dizi1[0]=10;
+        dizi1[1]="ali";
+        dizi1[2]=12.5;
+        dizi1[3]='z';
+        for(var i=0;i<dizi1.length;i++){
+            document.write(dizi1[i]+"<br>");
+        }
+        document.write("<br>");
+        
+        var dizi2=new Array(3);//uzunluğu sabit dizi
+        dizi2[0]="ocak";
+        dizi2[1]="şubat";
+        for(var k=0;k<dizi2.length;k++){
+            document.write(dizi2[k]+"<br>");
+        }
+        document.write("<br>");
+        
+        dizi2[0]=null;//dizi eleman içeriği değiştirme dizi2[0]=""; farklı bir şeydir.
+        for(var k=0;k<dizi2.length;k++){
+            document.write(dizi2[k]+"<br>");
+        }
+        
+    </script>
+</body>
+</html>

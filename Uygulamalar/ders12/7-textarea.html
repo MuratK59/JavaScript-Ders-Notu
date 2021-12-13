@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>textarea</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        Metin Alanı:
+        <textarea id="textalani" rows="10" cols="10"></textarea><br>
+        <label>cols:</label><input type="text" name="sutun" id="sutun"/><br>
+        <label>rows:</label><input type="text" name="satir" id="satir"/><br>
+        <input type="button" value="Değiştir" onclick="degistir()"/>
+        <p id="sayi"></p>
+        <script type="text/JavaScript">
+            var metinAlani=document.getElementById("textalani");
+            function degistir() {
+                metinAlani.cols=document.getElementById("sutun").value;
+                metinAlani.rows=document.getElementById("satir").value;
+            }
+
+            metinAlani.addEventListener("keydown",karakterSayisi);
+            function karakterSayisi() {
+                var sayisi=metinAlani.value;
+                sayisi=parseInt(sayisi.length)+1;
+                //burada hata var sadece rakam ve harfları sayacak bir şey bulmak lazım
+                document.getElementById("sayi").innerHTML="Karakter Sayısı:"+sayisi;  
+            }
+        </script>
+    </body>
+</html>

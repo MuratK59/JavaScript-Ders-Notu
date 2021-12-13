@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/JavaScript">
+            function gonder() {
+                var form=document.getElementById("formTest");
+                if (form.checkValidity()!=true) {
+                    alert("Eksik veya Yanlış Bilgiler var Kontrol Ediniz!!!");
+                }else{
+                    form.submit();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form id="formTest" action="test.php" method="POST">
+            
+            <label>Email Adresi:</label><input type="email" name="email" id="email"/><BR>
+            <label>Ad Soyad:</label><input type="text" name="ad" id="ad" required/><BR>
+            <label>Şifre:</label><input type="password" name="ad" id="ad" maxlength="8"/><BR>
+            <input type="button" value="Gonder" onclick="gonder()"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <button onclick="setTimeout(tektimer, 3000)">Tıkla 3sn Sonra Alert gelecek</button>
+        <!--bir kere çalışıp zamanlayıcı duracaktır-->
+        <h1 id="demo"></h1>
+        <script>
+            function tektimer(){
+                alert('Merhaba');
+            }
+
+            var myVar = setInterval(myTimer, 1000);
+            //her saniye sürekli çalışacak bir zamanlayıcı
+            function myTimer(){
+                var d = new Date();
+                document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+            }
+        </script>
+    </body>
+</html>

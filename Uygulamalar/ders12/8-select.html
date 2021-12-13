@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>select</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function init() {
+                var select=document.getElementById("renkler");
+                for (let i = 0; i < select.length; i++) {
+                    console.log(select[i].textContent +"-"+ select[i].value);
+                }
+            }
+        </script>
+    </head>
+    <body onload="init()">
+        <form>
+            <select id="renkler">
+                <option value="red">Kırmızı</option>
+                <option value="blue">Mavi</option>
+                <option value="purple">Mor</option>
+                <option value="green">Yeşil</option>
+            </select>
+            Seçilen İndeks:<i id="secilenIndex"></i>
+        </form>
+        <script>
+            var select=document.getElementById("renkler");
+            select.addEventListener("click",goster);
+            function goster() {
+                document.getElementById("secilenIndex").innerText="İndeks: "+ select.selectedIndex +" Değer:"+select[select.selectedIndex].value;
+            }
+
+        </script>
+    </body>
+</html>

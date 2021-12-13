@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>input text</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/JavaScript">
+            var d1,d2;
+            function ayniMi(){
+                d1 = document.getElementById("txt1").value;
+                d2 = document.getElementById("txt2").value;
+                if (d1==d2) {
+                    document.getElementById("bir").disabled=false;
+                    alert('İki Değer Aynı');
+                }else{
+                    document.getElementById("bir").disabled=true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label>Değer 1:</label><input type="text" name="txt1" id="txt1"/><BR>
+        <label>Değer 2:</label><input onkeyup="ayniMi()" type="text" name="txt2" id="txt2"/><BR>
+        <input id="bir" type="button" value="Gönder" disabled/>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ders4-1 genel değişkenler</title>
+    <script>
+        var globalDegisken=12;
+        function fun(){
+            //globalDegisken isimli değişken kullanılabilir durumda
+            console.log("fun fonksiyonu içerisinden globalDegisken içeriği:"+globalDegisken);
+        }
+        console.log("head bloğundan globalDegisken içeriği:"+globalDegisken);
+        fun();
+    </script>
+</head>
+<body>
+    <script>
+        //body bloğuna yazılan script içerisinden globalDegiskene erişilebilir.
+        console.log("body bloğundan globalDegisken içeriği:"+globalDegisken);
+        function fun2(){
+            //globalDegisken isimli değişken kullanılabilir durumda
+            console.log("fun2 fonksiyonu içerisinden globalDegisken içeriği:"+globalDegisken);
+        }
+        fun2();
+    </script>
+</body>
+</html>

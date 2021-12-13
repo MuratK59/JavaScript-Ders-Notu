@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="div1">
+            <p id="p1">birinci paragraf.</p>
+            <p id="p2">ikinci paragraf.</p>
+        </div>
+        
+        <script>
+            var para = document.createElement("p");
+            var node = document.createTextNode("Yeni paragraf.");
+            para.appendChild(node);
+            var element = document.getElementById("div1");
+            var child = document.getElementById("p1");
+            element.insertBefore(para,child);
+            //div içerisinde ilk sıraya ekle
+        </script>
+    </body>
+</html>

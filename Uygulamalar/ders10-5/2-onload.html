@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body onload="checkCookies()">
+        <!--body yüklenince olay tetiklenir-->
+        <p id="demo"></p>
+        
+        <script>
+        function checkCookies() {
+            var text = "";
+            if (navigator.cookieEnabled == true) {
+            text = "Cookies destekleniyor.";
+            } else {
+            text = "Cookies desteklenmiyor.";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+        </script>
+    
+    </body>
+</html>

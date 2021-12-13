@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>getElementById</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h2>HTML Elemanlarını id ile bulma</h2>
+
+        <p id="intro">Merhaba Dünya!</p>
+        <p>Bu örnek <b>getElementsById</b> metodunu gösterir.</p>
+
+        <p id="demo"></p>
+
+        <script>
+            var myElement = document.getElementById("intro");
+            document.getElementById("demo").innerHTML = "intro id li paragrafın içeriği " + myElement.innerHTML;
+        </script>
+    </body>
+</html>

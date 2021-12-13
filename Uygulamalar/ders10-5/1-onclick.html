@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1 onclick="this.innerHTML='tıklandı!'">bu metine tıkla!</h1>
+
+        <p>Tarihi ve saati görüntülemek için butona tıklayın..</p>
+
+        <button onclick="displayDate()">Tarih Saat Ne?</button>
+        <!--fare ile tıklanırsa olay tetiklenir-->
+        
+        <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+        </script>
+        
+        <p id="demo"></p>
+    </body>
+</html>

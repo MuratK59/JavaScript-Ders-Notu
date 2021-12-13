@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>getElementByTagName</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h2>HTML Elemanlarını etiket adı ile bulma</h2>
+        <div id="intro">
+            <p class="intro">Merhaba Dünya!</p>
+            <p class="intro">Bu örnek <b>getElementsByTagName</b> metodunu gösterir.</p>
+        </div>
+        <p id="demo"></p>
+        <script>
+            var x = document.querySelectorAll("p.intro");
+            document.getElementById("demo").innerHTML = 'class="intro" olan paragraf etiketlerinden ikincisinin içeriği :' + x[1].innerHTML;
+        </script>
+    </body>
+</html>

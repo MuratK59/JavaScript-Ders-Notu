@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ders7 - dizi metodları</title>
+    <script>
+        var dizi1=[5,10,7,12,10,9,15,9,16,20];
+        console.log("orjinal dizi: "+dizi1);
+        
+        var silinen=dizi1.pop();
+        //pop() dizinin son elemanını siler ve o değeri döndürür.
+        console.log("silinen değer: "+silinen);
+        console.log("dizinin son hali: "+dizi1);
+        
+        var ekle=59;
+        var yeniUzunluk=dizi1.push(ekle,22);
+        //push() ile dizinin sonuna eleman eklenir birden fazla olabilir
+        console.log("eklenen değer: "+ekle);
+        console.log("dizinin uzunluğu: "+yeniUzunluk);
+        console.log("dizinin son hali: "+dizi1);
+
+        var ilk=dizi1.indexOf(10);
+        //dizi içerisinde 10 elemanı aranıyor ve indis değeri döndürülür
+        console.log("aranan değerin indeksi: "+ilk);
+
+        var son=dizi1.lastIndexOf(10);
+        //dizi içerisinde 10 elemanı aranıyor ve son indis değeri döndürülür
+        console.log("aranan değerin son indeksi: "+son);
+
+        dizi1.reverse();
+        //dizi tersine çevriliyor
+        console.log("reverse metodundan sonra dizinin son hali: "+dizi1);
+
+        dizi1.sort();
+        //dizi küçükten büyüğe sıralanır
+        console.log("sort metodundan sonra dizinin son hali: "+dizi1);
+
+        var birlestir=dizi1.join("-");
+        //diziyi ayırıcı kullanarak bir metin haline getirir
+        console.log("join metodunun sonucu: "+birlestir);
+
+        var metin=dizi1.toString();
+        //diziyi metine dönüştürür
+        console.log("tostring metodunun sonucu: "+metin);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

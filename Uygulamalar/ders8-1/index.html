@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ders8-1 fonksiyon tanımlama</title>
+</head>
+<body>
+    <script>
+        function test(say1,say2){
+	        alert(say1+say2);
+        }
+        test(5,4);
+
+        var ust=function(say,kuvvet){
+            var sonuc=1;
+            for (var i = 0; i < kuvvet; i++) {
+                sonuc*=say;
+            }
+            return sonuc;
+        }
+        var toplam=ust(5,2) + ust(3,3);
+        document.write("işlem sonucu: "+ toplam);
+    </script>
+</body>
+</html>

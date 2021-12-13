@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>input text</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/JavaScript">
+            var d1;
+            function ekle(){
+                d1 = document.getElementById("txt1").value;
+                document.getElementById("txt2").value = d1;
+            }
+        </script>
+    </head>
+    <body>
+        <label>input1:</label><input type="text" name="txt1" id="txt1"/><BR>
+        <label>input2:</label><input type="text" name="txt2" id="txt2"/><BR>
+        <input type="button" value="Ekle" onclick="ekle()"/>
+    </body>
+</html>

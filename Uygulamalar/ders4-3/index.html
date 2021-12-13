@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ders4-3 veri türü örnekleri</title>
+</head>
+<body>
+    <script>
+        //undefined veri türü örneği
+        var ad;
+        alert("ad değişkenin içeriği:"+ad);
+        var a=5;
+        var b;
+        document.writeln("işlem sonucu:"+(a*b));
+
+        //null veri türü örnekleri
+        var s1=null;
+        var s2=25;
+        console.log("s1+s2="+(s1+s2));
+        //sonuç 25 olacaktır. çünkü null değeri işlem hesabına takılmaz.
+
+        var x=null;
+        var y="abc";
+        var z=x+y;
+        console.log("x+y="+z);
+        //y değişkeni içeriği string olarak kabul edilip toplam işlemi değil metin birleştirme yapılır.
+    </script>
+</body>
+</html>

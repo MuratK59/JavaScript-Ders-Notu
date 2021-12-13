@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ders9-2 math nesnesi</title>
+</head>
+<body>
+    <script>
+        var negatifSayi=-59;
+        console.log("abs() metodu sonucu :" + Math.abs(negatifSayi));
+        //mutlak değer alma
+
+        var ondalikSayi=12.24;
+        console.log("ceil() metodu sonucu :" + Math.ceil(ondalikSayi));
+        //yukarı yuvarlama
+
+        ondalikSayi=12.99;
+        console.log("floor() metodu sonucu :" + Math.floor(ondalikSayi));
+        //aşağı yuvarlama
+
+        ondalikSayi=12.50;
+        console.log("round() metodu sonucu :" + Math.round(ondalikSayi));
+        //yuvarlama
+
+        var sayi=Math.min(18,9,20);
+        console.log("min() metodu sonucu :" + Math.min(sayi));
+        //verilen değerler içerisinde ki en küçük değeri döndürür
+
+        sayi=Math.max(18,9,20);
+        console.log("max() metodu sonucu :" + Math.max(sayi));
+        //verilen değerler içerisinde ki en büyük değeri döndürür
+
+        console.log("pow() metodu sonucu :" + Math.pow(5,4));
+        //üst alma işlemi
+
+        console.log("sqrt() metodu sonucu :" + Math.sqrt(225));
+        //karekök alma işlemi
+
+        //0-100 arasında rastgele 10 tane sayı üretelim
+        var rastgele;
+        for (var i = 0; i < 10; i++) {
+            rastgele=Math.random()*100;
+            //console.log(rastgele);
+            console.log(Math.ceil(rastgele));
+        }
+    </script>
+</body>
+</html>
